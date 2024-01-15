@@ -1,0 +1,39 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile  # Specify the correct path to the Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+    volumes:
+      - ./backend:/usr/src/app
+    networks:
+      - mynetwork
+
+  database:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: new_password
+      MYSQL_DATABASE: vartur
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork
+
+  frontend:
+    image: node:16-alpine
+    working_dir: /usr/src/app
+    volumes:
+      - .:/usr/src/app  
+    command: npm run serve
+    ports:
+      - "8080:8080"
+    depends_on:
+      - backend
+
+networks:
+  mynetwork:
+    driver: bridge
