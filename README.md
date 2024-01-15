@@ -35,6 +35,8 @@ How to start;
     Run: npm start
 
   2nd step frontend:
+    
+    Go to the directory:
     Run: cd ..
     
     Install Dependencies:
