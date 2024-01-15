@@ -1,52 +1,54 @@
 # vue-ts-project
-How to start;
 
-# In Docker;
-  Navigate to your project root directory in the terminal.
-1. [Run: docker compose up --build]
-2. [visit http://localhost:8080/]
+## How to Start
 
+### In Docker:
+
+1. Navigate to your project root directory in the terminal.
+2. Run: `docker compose up --build`
+3. Visit [http://localhost:8080/](http://localhost:8080/)
+
+### On Your Computer:
+
+1. Navigate to your project root directory in the terminal.
+
+#### 1st Step - Backend / MySQL DB:
+
+- Go to the directory:
+  - Run: `cd backend`
   
-
-# In computer;
-  Navigate to your project root directory in the terminal.
+- Install Dependencies:
+  - Run: `npm install`
   
-  1st step backend / MySQL DB:
-    
-    Go to the directory:
-    Run: cd backend
-    
-    Install Dependencies:
-    Run: npm install
-    
-    Generate Prisma Server:
-    Run: npx prisma generate
-    
-    Compile TypeScript:
-    Run: npm run build
-    
-    Start DataBase:
-    Run: mysql -u root -p new_password -h localhost -P 3306
-    
-    Run Prisma migrations:
-    Run: npx prisma migrate dev
-    
-    Start your backend:
-    Run: npm start
+- Generate Prisma Server:
+  - Run: `npx prisma generate`
+  
+- Compile TypeScript:
+  - Run: `npm run build`
+  
+- Start DataBase:
+  - Run: `mysql -u root -p new_password -h localhost -P 3306`
+  
+- Run Prisma Migrations:
+  - Run: `npx prisma migrate dev`
+  
+- Start Your Backend:
+  - Run: `npm start`
 
-  2nd step frontend:
-    
-    Go to the directory:
-    Run: cd ..
-    
-    Install Dependencies:
-    Run: npm install
-        
-    Start your frontend:
-    Run: npm run serve
+#### 2nd Step - Frontend:
 
-  3rd step:
-    visit http://localhost:8080/
+- Go to the directory:
+  - Run: `cd ..`
+  
+- Install Dependencies:
+  - Run: `npm install`
+  
+- Start Your Frontend:
+  - Run: `npm run serve`
+
+#### 3rd Step:
+
+Visit [http://localhost:8080/](http://localhost:8080/)
 
 
 # Info;
