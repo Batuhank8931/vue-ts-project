@@ -5,13 +5,8 @@ How to start;
   Navigate to your project root directory in the terminal.
 1. [Run: docker compose up --build,]
 2. [visit http://localhost:8080/]
-3. [Step 3]
+
   
-  1st step:
-    Run: docker compose up --build,
-    
-  3nd step:
-    visit http://localhost:8080/
 
 # In computer;
   Navigate to your project root directory in the terminal.
