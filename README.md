@@ -12,6 +12,8 @@ How to start;
   Navigate to your project root directory in the terminal.
   
   1st step backend / MySQL DB:
+    
+    Go to the directory:
     Run: cd backend
     
     Install Dependencies:
